@@ -104,12 +104,15 @@
               Huan Yu<sup>*</sup>, <strong>Pengqin Wang<sup>*</sup></strong>, Jin Wang, Jialin Ji, Zhi Zheng, Jie Tu, Guodong Lu, Jun Meng, Meixin Zhu, Shaojie Shen, Fei Gao<br>
               <em><span style="color:#FF0000">IEEE Transactions on Mechatronics</span></em>, 2023, To appear.<br>
               <p>
-                Catching high-speed targets in the flight is a complex and typical highly dynamic task. In this paper, we propose Catch Planner, a planning-with-decision scheme for catching. 
-                For sequential decision making, we propose a policy search method based on deep reinforcement learning. 
-                In order to make catching adaptive and flexible, we propose a trajectory optimization method to jointly optimize the highly coupled catching time and terminal state while considering the dynamic feasibility and safety. 
-                We also propose a flexible constraint transcription method to catch targets at any reasonable attitude and terminal position bias. 
-                The proposed Catch Planner provides a new paradigm for the combination of learning and planning and is integrated on the quadrotor designed by ourselves, which runs at 100hz on the onboard computer. 
-                Extensive experiments are carried out in real and simulated scenes to verify the robustness of the proposed method and its expansibility when facing a variety of high-speed flying targets.
+                Catching high-speed targets in the flight is a complex and typical highly dynamic task. 
+                However, existing methods require manual setting of catching height or time, resulting in lacks of adaptability and flexibility and cannot deal with multiple targets. 
+                To bridge this gap, we propose a planning-with-decision scheme called Catch Planner. For sequential decision making, a lightweight policy search method based on deep reinforcement learning is proposed. 
+                It is jointly trained with the motion planning and decoupled from physics to speed up training. For motion planning, we propose a trajectory optimization method that jointly optimizes the highly coupled catching time and terminal state. 
+                The core is the flexible-terminal constraint transcription. It converts the three unique constraints of catching into differentiable metrics, including equality constraints for terminal position and time, and inequality constraints that enable reasonable terminal position offset and attitude relaxation. 
+                In addition, sparse parameterization based on MINCO class considers both dynamic feasibility and collision avoidance constraints. As a result, a generally constrained quadrotor planning problem is transformed into an unconstrained optimization that can be solved reliably and efficiently. 
+                We also propose an online iterative optimization method for predicting differentiable trajectories of targets. 
+                Catch Planner provides a new paradigm for the combination of learning and planning, where all algorithms can be run in real time onboard at 100hz. 
+                Extensive experiments are carried out in real-world and simulated scenes to verify the robustness and expansibility when facing a variety of high-speed flying targets.
               </p>
               <p>#Motion_Planning  #Decision_Making  #Spatio_Temporal_Trajectory_Optimization  #Deep_Reinforcement_Learning  #Catching</p>
               <a href="https://arxiv.org/abs/2302.04387">[paper]</a>
