@@ -81,7 +81,7 @@
               <papertitle>Catch Planner: Catching High-Speed Targets in the Flight</papertitle>
               <br>
               Huan Yu<sup>*</sup>, <strong>Pengqin Wang<sup>*</sup></strong>, Jin Wang, Jialin Ji, Zhi Zheng, Jie Tu, Guodong Lu, Jun Meng, Meixin Zhu, Shaojie Shen, Fei Gao<br>
-              <em><span style="color:#FF0000">IEEE Transactions on Mechatronics</span></em>, 2023, To appear.<br>
+              <em><span style="color:#FF0000">IEEE/ASME Transactions on Mechatronics</span></em>, doi: 10.1109/TMECH.2023.3286102.<br>
               <p>
                 Catching high-speed targets in the flight is a complex and typical highly dynamic task. 
                 However, existing methods require manual setting of catching height or time, resulting in lacks of adaptability and flexibility and cannot deal with multiple targets. 
@@ -96,6 +96,32 @@
               <p>#Motion_Planning  #Decision_Making  #Spatio_Temporal_Trajectory_Optimization  #Deep_Reinforcement_Learning  #Catching</p>
               <a href="https://ieeexplore.ieee.org/document/10175023">[paper]</a> <a href="https://www.youtube.com/watch?v=xrzVf31WsMM">[video<sup>YouTube</sup>]</a> 
               <a href="https://www.bilibili.com/video/BV1nX4y147dY/?spm_id_from=333.337.search-card.all.click&vd_source=e1b5fdbefde9f484ba998c38557580ea">[video<sup>Bilibili</sup>]</a>
+              <p></p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/bat_planner.png" alt="clean-usnob" width="220" height="220">
+            </td>
+            <td width="75%" valign="middle">
+              <papertitle>Bat Planner: Aggressive Flying Ball Player</papertitle>
+              <br>
+              Huan Yu<sup>*</sup>, Jie Tu<sup>*</sup>, <strong>Pengqin Wang</strong>, Zhi Zheng, Kewen Zhang, Guodong Lu, Fei Gao, Jin Wang <br>
+              <em><span style="color:#FF0000">IEEE Robotics and Automation Letters</span></em>, doi: 10.1109/LRA.2023.3293355.<br>
+              <p>
+                In this paper, an aggressive quadrotor ball playing system called Bat is proposed, whose goal is to intercept a flying ball and volley it towards a designated target. 
+                Aggressive means Bat operates the quadrotor aggressively to intercept balls that are far away and hit them to distant positions in ways that are beyond the reach of existing methods. 
+                The trajectory prediction of the ball is achieved by integrating forward the current position and velocity estimates using an extended kalman filter, and implementing cubic interpolation at the time resolution to calculate the continuous gradient for optimization. 
+                Facing the challenge of finding feasible hitting actions under extreme circumstances, we propose a two-stage planning approach, including transition point design and hitting primitive generation, with a simplified expression of uncoupled hitting actions. 
+                To obtain the best hitting motion, a trajectory optimization method is proposed, which can jointly optimize the hitting terminal states and time cost, considering dynamic feasibility and anticollision constraints. 
+                To avoid pathological hitting, a defensive rule constraint and its constraint transcription method are proposed. The largest difference from the existing methods is that Bat Planner can independently decide how to execute more aggressive key volleying maneuvers. 
+                A large number of simulation and real-world experiments are conducted, which prove the flying ball player can hit arriving balls from different directions and distances to arbitrary targets. 
+                To the best of our knowledge, Bat is currently the closest a quadrotor ball player has approached to human ball players' volleying ability.
+              </p>
+              <p>#Aerial_Systems  #Applications  #Motion_Planning</p>
+              <a href="https://ieeexplore.ieee.org/document/10175552">[paper]</a> 
+              <a href="https://www.bilibili.com/video/BV1r14y1S7Ae/?spm_id_from=333.337.search-card.all.click&vd_source=e1b5fdbefde9f484ba998c38557580ea">[video<sup>Bilibili</sup>]</a>
               <p></p>
             </td>
           </tr>
