@@ -82,7 +82,7 @@
               <papertitle>BEVGPT: Generative Pre-trained Transformer for Autonomous Driving Prediction, Decision Making and Planning</papertitle>
               <br>
               <strong>Pengqin Wang</strong>, Meixin Zhu, Hongliang Lu, Hui Zhong, Xianda Chen, Shaojie Shen, Xuesong Wang, Yinhai Wang<br>
-              <em><span style="color:#FF0000"> the Transportation Research Board Annual Meeting (TRB 2024)</span></em>, 2024.<br>
+              <em><span style="color:#FF0000"> the Transportation Research Board Annual Meeting (TRB 2024)</span></em><br>
 
               <p>#Autonomous_Driving  #Decision_Making  #Motion_Planning  #GPT </p>
               <a href="https://arxiv.org/abs/2310.10357">[paper]</a>
@@ -99,17 +99,7 @@
               <br>
               Huan Yu<sup>*</sup>, <strong>Pengqin Wang<sup>*</sup></strong>, Jin Wang, Jialin Ji, Zhi Zheng, Jie Tu, Guodong Lu, Jun Meng, Meixin Zhu, Shaojie Shen, Fei Gao<br>
               <em><span style="color:#FF0000">IEEE/ASME Transactions on Mechatronics</span></em>, 2023.<br>
-              <p>
-                Catching high-speed targets in the flight is a complex and typical highly dynamic task. 
-                However, existing methods require manual setting of catching height or time, resulting in lacks of adaptability and flexibility and cannot deal with multiple targets. 
-                To bridge this gap, we propose a planning-with-decision scheme called Catch Planner. For sequential decision making, a lightweight policy search method based on deep reinforcement learning is proposed. 
-                It is jointly trained with the motion planning and decoupled from physics to speed up training. For motion planning, we propose a trajectory optimization method that jointly optimizes the highly coupled catching time and terminal state. 
-                The core is the flexible-terminal constraint transcription. It converts the three unique constraints of catching into differentiable metrics, including equality constraints for terminal position and time, and inequality constraints that enable reasonable terminal position offset and attitude relaxation. 
-                In addition, sparse parameterization based on MINCO class considers both dynamic feasibility and collision avoidance constraints. As a result, a generally constrained quadrotor planning problem is transformed into an unconstrained optimization that can be solved reliably and efficiently. 
-                We also propose an online iterative optimization method for predicting differentiable trajectories of targets. 
-                Catch Planner provides a new paradigm for the combination of learning and planning, where all algorithms can be run in real time onboard at 100hz. 
-                Extensive experiments are carried out in real-world and simulated scenes to verify the robustness and expansibility when facing a variety of high-speed flying targets.
-              </p>
+
               <p>#Motion_Planning  #Decision_Making  #Spatio_Temporal_Trajectory_Optimization  #Deep_Reinforcement_Learning  #Catching</p>
               <a href="https://ieeexplore.ieee.org/document/10175023">[paper]</a> <a href="https://www.youtube.com/watch?v=xrzVf31WsMM">[video<sup>YouTube</sup>]</a> 
               <a href="https://www.bilibili.com/video/BV1nX4y147dY/?spm_id_from=333.337.search-card.all.click&vd_source=e1b5fdbefde9f484ba998c38557580ea">[video<sup>Bilibili</sup>]</a>
@@ -126,16 +116,7 @@
               <br>
               Huan Yu<sup>*</sup>, Jie Tu<sup>*</sup>, <strong>Pengqin Wang</strong>, Zhi Zheng, Kewen Zhang, Guodong Lu, Fei Gao, Jin Wang <br>
               <em><span style="color:#FF0000">IEEE Robotics and Automation Letters</span></em>, 2023.<br>
-              <p>
-                In this paper, an aggressive quadrotor ball playing system called Bat is proposed, whose goal is to intercept a flying ball and volley it towards a designated target. 
-                Aggressive means Bat operates the quadrotor aggressively to intercept balls that are far away and hit them to distant positions in ways that are beyond the reach of existing methods. 
-                The trajectory prediction of the ball is achieved by integrating forward the current position and velocity estimates using an extended kalman filter, and implementing cubic interpolation at the time resolution to calculate the continuous gradient for optimization. 
-                Facing the challenge of finding feasible hitting actions under extreme circumstances, we propose a two-stage planning approach, including transition point design and hitting primitive generation, with a simplified expression of uncoupled hitting actions. 
-                To obtain the best hitting motion, a trajectory optimization method is proposed, which can jointly optimize the hitting terminal states and time cost, considering dynamic feasibility and anticollision constraints. 
-                To avoid pathological hitting, a defensive rule constraint and its constraint transcription method are proposed. The largest difference from the existing methods is that Bat Planner can independently decide how to execute more aggressive key volleying maneuvers. 
-                A large number of simulation and real-world experiments are conducted, which prove the flying ball player can hit arriving balls from different directions and distances to arbitrary targets. 
-                To the best of our knowledge, Bat is currently the closest a quadrotor ball player has approached to human ball players' volleying ability.
-              </p>
+
               <p>#Aerial_Systems  #Applications  #Motion_Planning</p>
               <a href="https://ieeexplore.ieee.org/document/10175552">[paper]</a> 
               <a href="https://www.bilibili.com/video/BV1r14y1S7Ae/?spm_id_from=333.337.search-card.all.click&vd_source=e1b5fdbefde9f484ba998c38557580ea">[video<sup>Bilibili</sup>]</a>
@@ -150,14 +131,7 @@
             <td width="75%" valign="middle">
               <papertitle>Environment Transformer and Policy Optimization for Model-Based Offline Reinforcement Learning</papertitle><br>
               <strong>Pengqin Wang</strong>, Meixin Zhu, Shaojie Shen<br>
-              <p>
-                Interacting with the actual environment to acquire data is often costly and time-consuming in robotic tasks. Model-based offline reinforcement learning (RL) provides a feasible solution. On the one hand, it eliminates the requirements of interaction with the actual environment. 
-                On the other hand, it learns the transition dynamics and reward function from the offline datasets and generates simulated rollouts to accelerate training. Previous model-based offline RL methods adopt probabilistic ensemble neural networks (NN) to model aleatoric uncertainty and epistemic uncertainty. 
-                However, this results in an exponential increase in training time and computing resource requirements. Furthermore, these methods are easily disturbed by the accumulative errors of the environment dynamics models when simulating long-term rollouts. 
-                To solve the above problems, we propose an uncertainty-aware sequence modeling architecture called Environment Transformer. It models the probability distribution of the environment dynamics and reward function to capture aleatoric uncertainty and treats epistemic uncertainty as a learnable noise parameter. 
-                Benefiting from the accurate modeling of the transition dynamics and reward function, Environment Transformer can be combined with arbitrary planning, dynamics programming, or policy optimization algorithms for offline RL. In this case, we perform Conservative Q-Learning (CQL) to learn a conservative Q-function. 
-                Through simulation experiments, we demonstrate that our method achieves or exceeds state-of-the-art performance in widely studied offline RL benchmarks. Moreover, we show that Environment Transformer's simulated rollout quality, sample efficiency, and long-term rollout simulation capability are superior to those of previous model-based offline RL methods.
-              </p>
+
               <p>#Model_Based_RL  #Offline_RL  #Sequence_Modeling</p>
               <a href="https://arxiv.org/abs/2303.03811v2">[paper]</a>
               <p></p>
@@ -171,7 +145,7 @@
             <td style="padding:0px">
               <br>
               <p style="text-align:right;font-size:small;">
-                Last update: Oct 2023
+                Last update: Feb 2024
                 <br>
                 <a href="https://github.com/jonbarron/website">source</a>
               </p>
